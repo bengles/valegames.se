@@ -350,7 +350,7 @@
 
 	div.footer
 	{
-		display: none;
+		display: block;
 		height: 5em;
 		background-color: black;
 		outline:5px solid white;
