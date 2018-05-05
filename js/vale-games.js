@@ -8,7 +8,7 @@ $(function ()
 		$("#about-content").fadeIn();
 		$("div.logo-text").fadeIn();
 	}
-	else if ($(window).width() < 1080)
+	else if ($(window).width() < 1081)
 	{
 		$("#about-content").fadeIn();	
 		$("div.logo-text").fadeIn();
