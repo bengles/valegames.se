@@ -1,8 +1,75 @@
-<html>
+<!DOCTYPE html> 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Vale Games">
+		<meta name="description" content="Vale Games is a studio aiming to bring the world to life.">
+		<title>Vale Games</title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/vale-games.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/vale-games.css">
 	</head>
 	<body>
-		<h1>Vale Games</h1>
-			<p>Temporary website for Vale Games.</p>
+		<div class="container">		
+		<div class="banner">
+			<img src="img/vale-games-logo.png" alt="Vale Games Logo" class="center" id="logo">
+			<img src="img/vale-games-text.png" alt="Vale Games" class="center" id="logo-text">
+		</div>
+		<div class="nav-bar">
+			<nav>
+				<button class="nav-button" id="about">About</button>
+				<button class="nav-button" id="games">Games</button>	
+				<button class="nav-button" id="contact">Contact</button>
+			</nav>
+		</div>
+			<div class="content-view" id="about-content">
+				<h2>About</h2>
+				<p>Vale Games aims to bring the world around us to life by creating immersive and engaging geolocation based mobile games.</p>
+				<br>
+				<h2>The Team</h2>
+				<div class="team-row">
+					<div class="team-member">
+						<img src="img/ceo.jpg" alt="Björn Englesson"><br>
+						<h4>Björn Englesson</h4>
+						<p>CDO</p>
+					</div>
+					<div class="team-member">
+						<img src="img/ceo.jpg" alt="Björn Englesson"><br>
+						<h4>Björn Englesson</h4>
+						<p>CEO</p>
+					</div>
+					<div class="team-member">
+						<img src="img/ceo.jpg" alt="Björn Englesson"><br>
+						<h4>Björn Englesson</h4>
+						<p>CTO</p>
+					</div>
+				</div>	
+			</div>
+
+			<div class="content-view" id="games-content">
+				<div class="game">
+					<img src="img/world-of-pixels.png" alt="World of Pixels">
+					<h2>World of Pixels</h2>
+					<p>World of Pixels is a game that is amazing and will revolutionize the way we see our world. The world will go from being a place filled with a gray scale color palette to a world full of living color.</p>
+				</div>
+				<div class="game">
+					<img src="img/kth-campus.png" alt="KTH Campus">
+					<h2>KTH Campus</h2>
+					<p>KTH Campus was a game developed for KTH Royal Institute of Technology to celebrate the 100th anniversary of KTH Campus Valhallavägen.</p>
+				</div>
+			</div>
+
+			<div class="content-view" id="contact-content">
+				<h2>Contact</h2>
+				<p>You can reach us on <a href="mailto:info@valegames.se">info@valegames.se</a>.</p>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-content">
+				Business inquires: <a href="mailto:business@valegames.se">business@valegames.se</a>.<br>
+				Copyright &copy; 2018 Vale Games. All rights reserved.
+			</div>
+		</div>
 	</body>
-</html>
+</html>	
