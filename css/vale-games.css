@@ -52,7 +52,7 @@
 		margin: auto;
 		padding:1em;
 		display:none;
-		color:#333333ff;
+		color:#222222ff;
 	}
 
 	nav
@@ -224,14 +224,13 @@
 
 	div	h1,h2,h3,h4
 	{
-		font-size: 3em;
-		font-weight: 100;
+		font-weight: 300;
+		font-size: 6em;
 	}
 
 	div p
 	{
-		font-size: 1.75em;
-		font-weight: 100;
+		font-size: 3em;
 	}
 
 	div.container
@@ -321,7 +320,7 @@
 		width: 85%;
 		margin: auto;
 		display:none;
-		color:#111111ff;
+		color:#222222ff;
 	}
 
 	a[href]
