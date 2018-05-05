@@ -5,7 +5,7 @@ $(function ()
 		console.log("mobile");
 		$("#about-content").fadeIn();
 	}
-	else if ($(window).width() < 768)
+	else if ($(window).width() < 1080)
 	{
 		console.log("asd");
 		$("#about-content").fadeIn();	
