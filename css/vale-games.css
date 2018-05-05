@@ -314,6 +314,17 @@
 		display:block;
 	}
 
+	.logo-text
+	{
+		display: none;
+		position: relative;
+		float: left;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size:3em;
+	}
+
 	div.content-view
 	{	
 		padding-top: 1em;

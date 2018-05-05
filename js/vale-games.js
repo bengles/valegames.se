@@ -1,14 +1,15 @@
 $(function () 
 {
 
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+	{
 		$("#about-content").fadeIn();
+		$("div.logo-text").fadeIn();
 	}
 	else if ($(window).width() < 1080)
 	{
 		$("#about-content").fadeIn();	
-
+		$("div.logo-text").fadeIn();
 	} 
 	else
 	{
