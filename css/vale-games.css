@@ -24,7 +24,7 @@
 		height: 100%;
 	  	background:#87deafff;
 		font-family: 'Lato', sans-serif;
-		font-weight: 100;
+		font-weight: 300;
 	}
 
 	div.container
@@ -33,20 +33,12 @@
 		height: 100%;
 		width: 100%;
 		min-height: 100%;
-	    margin-bottom: -5em;
-	}
-
-	div.container:after {
-	    content: "";
-	    display: block;
-	    height: 5em;
-	    clear:both;
 	}
 
 	div	h1,h2,h3,h4
 	{
 		font-size: 3em;
-		font-weight: 200;
+		font-weight: 300;
 	}
 
 	div p
@@ -60,7 +52,7 @@
 		margin: auto;
 		padding:1em;
 		display:none;
-		color:white;
+		color:#333333ff;
 	}
 
 	nav
@@ -129,7 +121,13 @@
 
 	a[href]
 	{
-		color:gray;
+		color:#009900ff;
+		text-decoration: none;
+	}
+
+	a[href]:hover
+	{
+		color:#000000ff;
 		text-decoration: none;
 	}
 
@@ -167,7 +165,6 @@
 	div.game
 	{
 		width: 100%;
-		margin:1em;
 		overflow:auto;
 	}
 
@@ -222,7 +219,7 @@
 		height: 100%;
 	  	background:#87deafff;
 		font-family: 'Lato', sans-serif;	  	
-		font-weight: 100;
+		font-weight: 200;
 	}
 
 	div	h1,h2,h3,h4
@@ -242,14 +239,6 @@
 		display: block;
 		height: 100%;
 		min-height: 100%;
-	    margin-bottom: -5em;
-	}
-
-	div.container:after {
-	    content: "";
-	    display: block;
-	    height: 5em;
-	    clear:both;
 	}
 
 	nav
@@ -332,7 +321,7 @@
 		width: 85%;
 		margin: auto;
 		display:none;
-		color:white;
+		color:#333333ff;
 	}
 
 	a[href]

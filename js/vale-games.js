@@ -1,6 +1,8 @@
 $(function () 
 {
 
+	$('a').attr('target', '_blank');
+
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
 	{
 		$("#about-content").fadeIn();
