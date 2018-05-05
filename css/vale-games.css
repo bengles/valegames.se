@@ -219,7 +219,7 @@
 		height: 100%;
 	  	background:#87deafff;
 		font-family: 'Lato', sans-serif;	  	
-		font-weight: 200;
+		font-weight: 300;
 	}
 
 	div	h1,h2,h3,h4
@@ -321,7 +321,7 @@
 		width: 85%;
 		margin: auto;
 		display:none;
-		color:#333333ff;
+		color:#111111ff;
 	}
 
 	a[href]
