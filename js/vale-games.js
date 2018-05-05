@@ -13,6 +13,12 @@ $(function ()
 	} 
 	else
 	{
+		setTimeout(function() 
+		{
+			shrinkBanner();
+		    	$('html').off('DOMMouseScroll');
+		}, 1000);
+
 		// Scroll detection for Firefox
 		$('html').on('DOMMouseScroll', function (e) 
 		{
@@ -65,7 +71,7 @@ function shrinkBanner()
 	$("div.banner").animate({height: '8em'}, "slow");
 	$("img#logo").animate({width: '6em'}, "slow", function() 
 	{
-		$(this).animate({left: '5em'}, "slow", function() 
+		$(this).animate({left: '12.5%'}, "slow", function() 
 		{
 			$("div.logo-text").fadeIn();
 			$("div.container").css('height', 'auto');
