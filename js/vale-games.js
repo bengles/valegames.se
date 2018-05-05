@@ -2,13 +2,41 @@ $(function ()
 {
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		console.log("mobile");
+	
 		$("#about-content").fadeIn();
 	}
 	else if ($(window).width() < 1080)
 	{
-		console.log("asd");
 		$("#about-content").fadeIn();	
+
+	} 
+	else
+	{
+		// Scroll detection for Firefox
+		$('html').on('DOMMouseScroll', function (e) 
+		{
+		    var delta = e.originalEvent.detail;
+
+		    // If scrolling down
+			if (delta > 0) 
+		    {
+		    	shrinkBanner();
+		    	$('html').off('DOMMouseScroll');
+		    }
+		});
+
+		// Scroll detection for Chrome, IE, Opera and Safari
+		$('html').on ('mousewheel', function (e) 
+		{
+		    var delta = e.originalEvent.wheelDelta;
+
+		    // If scrolling down
+		    if (delta < 0) 
+		    {
+		       shrinkBanner();
+		       $('html').off('mousewheel');
+		    } 
+		});
 	}
 
 	$('button.nav-button').click(function () 
@@ -28,32 +56,6 @@ $(function ()
 				break;
 		}
 	});
-
-	// Scroll detection for Firefox
-	$('html').on('DOMMouseScroll', function (e) 
-	{
-	    var delta = e.originalEvent.detail;
-
-	    // If scrolling down
-		if (delta > 0) 
-	    {
-	    	shrinkBanner();
-	    	$('html').off('DOMMouseScroll');
-	    }
-	});
-
-	// Scroll detection for Chrome, IE, Opera and Safari
-	$('html').on ('mousewheel', function (e) 
-	{
-	    var delta = e.originalEvent.wheelDelta;
-
-	    // If scrolling down
-	    if (delta < 0) 
-	    {
-	       shrinkBanner();
-	       $('html').off('mousewheel');
-	    } 
-	});
 });
 
 function shrinkBanner()
@@ -64,7 +66,7 @@ function shrinkBanner()
 	{
 		$(this).animate({left: '5em'}, "slow", function() 
 		{
-			$("img#logo-text").fadeIn();
+			$("div.logo-text").fadeIn();
 			$("div.container").css('height', 'auto');
 			$("#about-content").fadeIn();
 			$("div.footer").fadeIn();
