@@ -191,6 +191,7 @@
 
 	html
 	{
+		overflow: hidden;
 		height:100%;
 	}
 
@@ -202,6 +203,7 @@
 		height: 100%;
 	  	background:#87deafff;
 		font-family: 'Noto Sans', sans-serif;
+		overflow:auto;
 	}
 
 	div.container
