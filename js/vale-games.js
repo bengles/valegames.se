@@ -1,6 +1,16 @@
 $(function () 
 {
 
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		console.log("mobile");
+		$("#about-content").fadeIn();
+	}
+	else if ($(window).width() < 768)
+	{
+		console.log("asd");
+		$("#about-content").fadeIn();	
+	}
+
 	$('button.nav-button').click(function () 
 	{
 		var id = $(this).attr('id');
@@ -52,11 +62,10 @@ function shrinkBanner()
 	$("div.banner").animate({height: '8em'}, "slow");
 	$("img#logo").animate({width: '6em'}, "slow", function() 
 	{
-		$(this).animate({left: '5%'}, "slow", function() 
+		$(this).animate({left: '5em'}, "slow", function() 
 		{
 			$("img#logo-text").fadeIn();
 			$("div.container").css('height', 'auto');
-			$("div.container:after").show();
 			$("#about-content").fadeIn();
 			$("div.footer").fadeIn();
 		});

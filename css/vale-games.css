@@ -3,168 +3,366 @@
 	font-family: 'Noto Sans', sans-serif;
 }
 
-html
-{
-	height:100%;
+@media screen and (min-width: 768px) {
+    /* For desktop: */
+    div.banner
+	{
+		position: relative;
+		height: 100%;
+		width: 100%;
+		background: white;
+		display:block;
+		z-index: 1;
+	}
+
+	html
+	{
+		height:100%;
+	}
+
+	body
+	{
+		position: relative;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	  	background:#87deafff;
+		font-family: 'Noto Sans', sans-serif;
+	}
+
+	div.container
+	{
+		display: block;
+		height: 100%;
+		width: 100%;
+		min-height: 100%;
+	    margin-bottom: -5em;
+	}
+
+	div.container:after {
+	    content: "";
+	    display: block;
+	    height: 5em;
+	    clear:both;
+	}
+
+	div.content-view
+	{	
+		width: 80%;
+		margin: auto;
+		padding:1em;
+		display:none;
+		color:white;
+	}
+
+	nav
+	{
+		width: 60%;
+		left:50%;
+		height: 100%;
+		margin:auto;
+	}
+
+	div.nav-bar
+	{
+		display:none;
+		width: 100%;
+		height: 3em;
+		background: black;
+	}
+
+	button.nav-button
+	{
+		height: 100%;
+		width: 33%;
+		margin:auto;
+		color:white;
+		font-size: 1.5em;
+		background: black;
+		border: none;
+		outline: none;
+		padding:0;
+	}
+
+	button.nav-button:hover
+	{
+		background-color: #333333ff;
+	}
+
+	img.center
+	{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		display: block;
+		margin: auto;
+		padding:1%;
+		vertical-align: middle;
+	}
+
+	img#logo-text
+	{
+		height: 3em;
+		display:none;
+	}
+
+	a[href]
+	{
+		color:gray;
+		text-decoration: none;
+	}
+
+	div.team-row
+	{
+		width: 100%;
+		margin: auto;	
+		overflow:hidden;
+	}
+
+	div.team-member
+	{
+		position: relative;
+		padding:2em;
+		float:left;
+		width: calc(33% - 4em);
+		margin:auto;
+	}
+
+	div.team-member img
+	{
+		display: block;
+		margin: auto;
+		width: 18em;
+		border-radius: 50%;
+	}
+
+	div.team-member p,h4
+	{
+		text-align: center;
+		padding: 0;
+		margin: 0.5em;
+	}
+
+	div.game
+	{
+		width: 100%;
+		margin:1em;
+		overflow:auto;
+	}
+
+	div.game img
+	{
+		margin:2em;
+		width: 25%;
+		float:right;
+		border-radius:10%;
+	}
+
+	div.footer
+	{
+		display: none;
+		height: 5em;
+		background-color: black;
+		outline:5px solid white;
+	}
+
+	div.footer-content
+	{
+		margin:0 auto;
+		padding: 1em;
+		width: 40em;
+		display: block;
+		color:#bbbbbbff;
+	}
 }
 
-body
-{
-	position: relative;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-  	background:#87deafff;
-	font-family: 'Noto Sans', sans-serif;
-}
+@media screen and (max-width: 767px) {
 
-div.container
-{
-	display: block;
-	height: 100%;
-	min-height: 100%;
-    margin-bottom: -5em;
-}
+	div.banner
+	{
+		position: relative;
+		width: 100%;
+		height: 8em;
+		display: block;
+		z-index: 1;
+		background-color: white;
+	}
 
-div.container:after {
-    content: "";
-    display: none;
-    height: 5em;
-}
+	html
+	{
+		height:100%;
+	}
 
+	body
+	{
+		position: relative;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	  	background:#87deafff;
+		font-family: 'Noto Sans', sans-serif;
+	}
 
-div.banner
-{
-	position: relative;
-	height: 100%;
-	width: 100%;
-	background: white;
-	display:block;
-	z-index: 1;
-}
+	div.container
+	{
+		display: block;
+		height: 100%;
+		min-height: 100%;
+	    margin-bottom: -5em;
+	    overflow: hidden;
+	}
 
-nav
-{
-	width: 60%;
-	left:50%;
-	height: 100%;
-	margin:auto;
-}
+	div.container:after {
+	    content: "";
+	    display: block;
+	    height: 5em;
+	    clear:both;
+	}
 
-div.nav-bar
-{
-	display:none;
-	width: 100%;
-	height: 3em;
-	background: black;
-}
+	nav
+	{
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		margin:auto;
+	}
 
-button.nav-button
-{
-	height: 100%;
-	width: 33%;
-	margin:auto;
-	color:white;
-	font-size: 1.5em;
-	background: black;
-	border: none;
-	outline: none;
-}
+	div.nav-bar
+	{
+		display:block;
+		width: 100%;
+		height: 3em;
+		background: black;
+	}
 
-button.nav-button:hover
-{
-	background-color: #333333ff;
-}
+	button.nav-button
+	{
+		height: 100%;
+		width: 30%;
+		margin:auto;
+		color:white;
+		font-size: 1.5em;
+		background: black;
+		border: none;
+		outline: none;
+		padding:0;
+	}
 
-img.center
-{
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%,-50%);
-	display: block;
-	margin: auto;
-	padding:1%;
-	vertical-align: middle;
-}
+	button.nav-button:hover
+	{
+		background-color: #333333ff;
+	}
 
-img#logo-text
-{
-	height: 3em;
-	display:none;
-}
+	img.center
+	{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		display: block;
+		margin: auto;
+		padding:1%;
+	}
 
-div.content-view
-{	
-	width: 50%;
-	margin: auto;
-	padding:1em;
-	display:none;
-	color:white;
-}
+	img#logo
+	{
+		position:absolute;
+		top:50%;
+		left:5em;
+		width: 6em;
+		transform: translate(-50%,-50%);
+		display: block;
+		margin: auto;
+	}
 
-a[href]
-{
-	color:gray;
-	text-decoration: none;
-}
+	img#logo-text
+	{
+		height: 2em;
+		display:block;
+	}
 
-div.team-row
-{
-	width: 100%;
-	margin: auto;	
-	overflow:hidden;
-}
+	div.content-view
+	{	
+		padding-top: 1em;
+		padding-bottom: 1em;
+		width: 85%;
+		margin: auto;
+		display:none;
+		color:white;
+	}
 
-div.team-member
-{
-	padding:2em;
-	float:left;
-	width: calc(33% - 4em);
-	margin:auto;
-}
+	a[href]
+	{
+		color:gray;
+		text-decoration: none;
+	}
 
-div.team-member img
-{
-	width: 100%;
-	border-radius: 50%;
-}
+	div.team-row
+	{
+		width: 100%;
+		margin: auto;	
+		overflow:hidden;
+	}
 
-div.team-member p,h4
-{
-	text-align: center;
-	padding: 0;
-	margin: 0.5em;
-}
+	div.team-member
+	{
+		display: block;
+		margin:auto;
+		clear:both;
+		height: auto;
+		overflow:auto;
+		padding-top:1em;
+		padding-bottom: 1em;
+	}
 
-div.game
-{
-	width: 100%;
-	margin:1em;
-	overflow:auto;
-}
+	div.team-member img
+	{
+		display: block;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 20em;
+		margin: auto;
+		border-radius: 50%;
+	}
 
-div.game img
-{
-	margin:2em;
-	width: 25%;
-	float:right;
-	border-radius:10%;
-}
+	div.team-member p,h4
+	{
+		text-align: center;
+		padding: 0;
+		margin: 0.5em;
+	}
 
-div.footer
-{
-	display: none;
-	height: 5em;
-	background-color: black;
-	outline:5px solid white;
-}
+	div.game
+	{
+		width: 100%;
+		overflow:auto;
+	}
 
-div.footer-content
-{
-	margin:0 auto;
-	padding: 1em;
-	width: 40em;
-	display: block;
-	color:#bbbbbbff;
+	div.game img
+	{
+		margin:2em;
+		width: 25%;
+		float:right;
+		border-radius:10%;
+	}
+
+	div.footer
+	{
+		display: none;
+		height: 5em;
+		background-color: black;
+		outline:5px solid white;
+	}
+
+	div.footer-content
+	{
+		margin:0 auto;
+		padding-top:1em;
+		width: 30em;
+		display: block;
+		color:#bbbbbbff;
+	}
 }
