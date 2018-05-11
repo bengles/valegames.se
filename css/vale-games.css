@@ -122,13 +122,13 @@
 
 	a[href]
 	{
-		color:#009900ff;
+		color:teal;
 		text-decoration: none;
 	}
 
 	a[href]:hover
 	{
-		color:#000000ff;
+		color:blue;
 		text-decoration: none;
 	}
 
@@ -333,13 +333,13 @@
 
 	a[href]
 	{
-		color:#009900ff;
+		color:teal;
 		text-decoration: none;
 	}
 
 	a[href]:hover
 	{
-		color:#000000ff;
+		color:blue;
 		text-decoration: none;
 	}
 
